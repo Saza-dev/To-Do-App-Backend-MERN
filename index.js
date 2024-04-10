@@ -3,6 +3,7 @@ import env from 'dotenv';
 import cors from 'cors';
 import dbConnect from "./config/db.js"
 import taskRoute from "./routes/taskRoutes.js"
+import categoryRoute from "./routes/categoryRoutes.js"
 
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(cors())
 
 app.use("/api/v1/TASK",taskRoute)
+app.use("/api/v1/CATEGORY",categoryRoute)
 
 
 app.listen(PORT,()=>{

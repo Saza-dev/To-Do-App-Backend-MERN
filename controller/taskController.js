@@ -13,7 +13,7 @@ const getTasks = asyncHandler (async(req,res)=>{
 
 try {
     const tasks = await Task.find()
-    res.json(newTask)
+    res.json(tasks)
 } catch (error) {
     console.log(error)
 }
@@ -43,7 +43,6 @@ const updateTask = asyncHandler(async(req,res)=>{
 
 
 // deleting task
-
 const deleteTask = asyncHandler(async(req,res)=>{
     const {_id} = req.params
     try {
