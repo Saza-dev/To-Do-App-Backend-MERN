@@ -1,4 +1,4 @@
-# To DO App Backend
+# To Do App Backend
 #### version 1.0.0
 This backend is the powerhouse of our Todo application, built with the MERN stack. It leverages **MongoDB** for a flexible, schema-less database, **Express.js** for robust server-side routing, **Node.js** for a scalable network application framework, and integrates seamlessly with a **React** frontend.
 
